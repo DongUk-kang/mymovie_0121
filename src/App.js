@@ -41,7 +41,7 @@ const App = () => {
                     <div>
                         {movies.map(movie =>
                             <>
-                                <h1>Movie Title : {movie.name}</h1>
+                                <h1>Movie Title : {movie.original_name || movie.original_title}</h1>
                                 <h2>first Release Day : {movie.first_air_date || movie.release_date}</h2>
                                 <h3>{movie.vote_average} : 10</h3>
                             </>
